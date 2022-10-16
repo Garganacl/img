@@ -1,15 +1,19 @@
 :root {
-  --dark-1: #00103b;
-  --dark-2: #001757;
   --light-1: #fff;
-  --light-2: #ff3cb4;
 }
 
 body {
-  background: #00103b;
+  background: #111114;
   color: var(--light-1);
   font-family: 'MuseoModerno', cursive;
   margin: 0;
+}
+.index-buttons {
+  justify-content: center;
+  display: flex;
+  margin-top: 225px;
+  left: 100px;
+  align-items: center;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -84,7 +88,7 @@ footer {
   background: rgba(255, 255, 255, 0.5);
 }
 
-button {
+.button {
   width: 100%;
   border: none;
   outline: 0;
@@ -96,9 +100,11 @@ button {
   background: rgba(255, 255, 255, 0.5);
   font-size: 150%;
   cursor: pointer;
+  justify-content: center;
+  display: flex;
 }
 
-button:hover {
+.button:hover {
   background: rgba(255, 255, 255, 0.75);
 }
 

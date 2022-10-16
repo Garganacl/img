@@ -8,19 +8,15 @@
     <title>Image Hoster</title>
   </head>
   <body>
-    <nav>
+    <div class="button">
       <a href="/upload">Upload</a>
       <a href="/paste">Paste</a>
-    </nav>
-    <main>
-
+    </div>
+    <div class="button" style="display: flex;">
     <form method="POST" action="/upload" enctype="multipart/form-data">
-      <input name="data" type="file" accept="image/*" class="btn" required>
+      <input class="button" name="data" type="file" accept="image/*" class="btn" required>
       <button type="submit">Upload</button>
     </form>
-
-    <footer>Created by <a href="https://github.com/navaneethkm004">Navaneeth K M</a></footer>
-    
-    </main>
+    </div>
   </body>
 </html>
