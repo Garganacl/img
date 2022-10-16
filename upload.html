@@ -1,22 +1,27 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./public/style.css">
-    <title>Image Hoster</title>
-  </head>
-  <body>
-    <div class="button">
-      <a href="https://latebat.github.io/img/upload">Upload</a>
-      <a href="https://latebat.github.io/img/paste">Paste</a>
-    </div>
-    <div class="button" style="display: flex;">
-    <form method="POST" action="/upload" enctype="multipart/form-data">
-      <input class="button" name="data" type="file" accept="image/*" class="btn" required>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;400;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./public/style.css">
+  <title>Image Hoster</title>
+</head>
+
+<body>
+  <nav>
+    <a href="https://latebat.github.io/img/upload.html">Upload</a>
+    <a href="https://latebat.github.io/img/paste.html">Paste</a>
+  </nav>
+  <main>
+
+    <form method="POST" action="/img/upload.html" enctype="multipart/form-data">
+      <input name="data" type="file" accept="image/*" class="btn" required>
       <button type="submit">Upload</button>
     </form>
-    </div>
-  </body>
+
+  </main>
+</body>
+
 </html>
